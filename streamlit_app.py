@@ -12,7 +12,7 @@ def cv2pil(image):
     new_image = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
     return new_image
 
-st.title("Web アプリ")
+st.title("ノイズ除去 Web アプリ")
 
 filepath = st.file_uploader(
     "画像をアップロードしてください.", type=["jpg", "jpeg", "png"], key=1
